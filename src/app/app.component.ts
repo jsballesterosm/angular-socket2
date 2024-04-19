@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { socket_io } from '../shared/utils/sockets/socket-io.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prueba-socket2';
+
+  constructor() {
+      socket_io.emit('chat message', 'jose luis prueba');
+  }
+
 }

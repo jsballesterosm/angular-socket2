@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'prueba-socket2';
 
   constructor() {
-      socket_io.emit('chat message', 'jose luis prueba');
+      socket_io.emit('chat message', 'prueba sebastian desde saturno');
   }
 
 }
